@@ -1,0 +1,15 @@
+@import './utils/variables';
+@import './base/common';
+@import './base/font';
+@import './base/normalize';
+// @import './utils/visually-hidden';
+@import './components/header';
+@import './components/scrollBar';
+@import './components/containers';
+@import './components/footer';
+@import './components/slider';
+@import './components/templates';
+@import './pages/lifestylePage';
+@import './pages/photodiaryPage';
+@import './pages/musicPage';
+@import './pages/commonStylePage';

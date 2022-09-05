@@ -1,0 +1,241 @@
+.photodiary-first-block__wrapper {
+  width: 100%;
+}
+
+.photodiary-first-block__sub-title {
+  @extend %subTitle;
+}
+
+.photodiary-first-block__title {
+  @extend %title;
+  margin: 30px 0px 30px 0px;
+}
+
+.photodiary-first-block__text {
+  @extend %text;
+  margin: 20px 0px 20px 0px;
+}
+
+.photodiary-first-block__img {
+  max-width: 100%;
+  margin: 30px 0px 30px 0px;
+}
+
+.photodiary-first-block__text-italic {
+  font-family: 'PlayfairDisplay-Italic';
+  font-style: italic;
+  font-weight: 300;
+  color: var(--dim-gray-color);
+  padding: 0px 16px 0px 16px;
+  font-size: calc(12px + 3 * (100vw / 2650));
+  line-height: 1.5;
+}
+
+.photodiary-first-block__links {
+  display: flex;
+  justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+}
+
+.photodiary-first-block__links-wrapper {
+  width: 190px;
+  display: flex;
+  justify-content: space-between;
+  display: -ms-flexbox;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  @extend %subTitle;
+}
+
+.photodiary-first-block__link {
+  color: var(--shades-of-cloudy-color);
+  transition: all var(--transition-duration);
+  transition-timing-function: var(--cubic);
+  -webkit-transition: all var(--transition-duration);
+  margin: 0px 0px 50px 0px;
+
+  &:hover {
+    color: var(--dim-gray-color);
+  }
+}
+
+.photodiary-second-block__wrapper {
+  width: 100%;
+  background-color: var(--white-smoke-bg-color);
+  padding: 40px 0px 80px 0px;
+}
+
+.photodiary-second-block__sub-title {
+  @extend %subTitle;
+  margin: 0px 0px 30px 0px;
+}
+
+.photodiary-second-block__content-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  display: -ms-flexbox;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-flex-wrap: wrap;
+
+  @media (max-width: 767px) {
+    justify-content: center;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+  }
+}
+
+.photodiary-second-block__content-row {
+  width: 31%;
+
+  @media (max-width: 767px) {
+    width: 90%;
+    margin: 30px 0px 30px 0px;
+  }
+}
+
+.photodiary-second-block__img {
+  width: 100%;
+}
+
+.photodiary-second-block__title {
+  @extend %title;
+  font-size: calc(15px + 10 * (100vw / 2650));
+}
+
+.photodiary-third-block__wrapper {
+  margin: 90px 0px 50px 0px;
+
+  img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.photodiary-third-block__comment-count {
+  @extend %subTitle;
+  margin: 20px 0px 20px 0px;
+}
+
+.photodiary-third-block__comment {
+  margin: 35px 0px 35px 0px;
+  display: flex;
+  justify-content: space-between;
+  display: -ms-flexbox;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+}
+
+.photodiary-third-block__comment-content {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+
+  @media (max-width: 600px) {
+    width: 80%;
+  }
+
+  @media (max-width: 481px) {
+    width: 75%;
+  }
+
+  @media (max-width: 426px) {
+    width: 70%;
+  }
+}
+
+.photodiary-third-block__comment-name {
+  @extend %text;
+}
+
+.photodiary-third-block__comment-text {
+  @extend %text;
+  margin: 20px 0px 20px 0px;
+}
+
+.photodiary-third-block__comment-reply {
+  @extend %subTitle;
+}
+
+.photodiary-third-block__join {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  display: -ms-flexbox;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+}
+
+.photodiary-third-block__input {
+  width: 85%;
+  border: 1px solid var(--shades-of-cloudy-color);
+  border-radius: 6px;
+  @extend %subTitle;
+  outline: none;
+  padding: 10px;
+
+  @media (max-width: 600px) {
+    width: 80%;
+  }
+
+  @media (max-width: 481px) {
+    width: 75%;
+  }
+
+  @media (max-width: 426px) {
+    width: 70%;
+  }
+}
+
+.photodiary-third-block__links {
+  margin: 30px 0px 30px 0px;
+  display: flex;
+  justify-content: flex-end;
+  display: -ms-flexbox;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+}
+
+.photodiary-third-block__links-wrapper {
+  width: 190px;
+  display: flex;
+  justify-content: space-between;
+  display: -ms-flexbox;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  @extend %subTitle;
+}
+
+.photodiary-third-block__link {
+  color: var(--shades-of-cloudy-color);
+  transition: all var(--transition-duration);
+  transition-timing-function: var(--cubic);
+  -webkit-transition: all var(--transition-duration);
+  margin: 0px 0px 50px 0px;
+
+  &:hover {
+    color: var(--dim-gray-color);
+  }
+}
